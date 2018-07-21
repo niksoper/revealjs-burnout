@@ -132,7 +132,7 @@ module.exports = function(grunt) {
 				tasks: 'css-themes'
 			},
 			css: {
-				files: [ 'css/reveal.scss' ],
+				files: [ 'css/reveal.scss', 'css/present.scss' ],
 				tasks: 'css-core'
 			},
 			html: {
@@ -169,7 +169,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'default', [ 'css', 'js' ] );
 
 	// JS task
-	grunt.registerTask( 'js', [ 'jshint', 'uglify', 'qunit' ] );
+	grunt.registerTask( 'js', [ 'jshint', 'uglify' ] );
 
 	// Theme CSS
 	grunt.registerTask( 'css-themes', [ 'sass:themes' ] );

@@ -6,6 +6,7 @@
  * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
  */
 
+ @import 'present';
 
 /*********************************************
  * RESET STYLES
@@ -1715,3 +1716,15 @@ $controlsArrowAngleActive: 36deg;
 .zoomed .reveal .roll span:after {
 	visibility: hidden;
 }
+
+/*********************************************
+ * MY STYLES
+ *********************************************/
+
+// .reveal .slides {
+//   section {
+//     h1 {
+//       font-size: 14px;
+//     }
+//   }
+// }
