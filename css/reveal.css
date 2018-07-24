@@ -11,6 +11,22 @@
 .reveal .slides section h2 {
   font-size: 2em; }
 
+.reveal .slides section h3 {
+  font-size: 1.2em;
+  margin-top: 3rem; }
+
+.reveal .slides section blockquote {
+  background-color: #fdf5e8; }
+  .reveal .slides section blockquote cite {
+    font-size: 0.6em; }
+
+.reveal .slides section img {
+  display: block;
+  margin: 2.5rem auto;
+  max-width: 400px;
+  max-height: 400px;
+  border: none; }
+
 /*********************************************
  * RESET STYLES
  *********************************************/
