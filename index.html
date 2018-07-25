@@ -186,14 +186,137 @@
           <li class="fragment fade-up">Trying to do too much (flux to redux)</li>
         </ul>
         <p class="fragment fade-up relate">Who can relate to these?</p>
+        <aside class="notes">
+          <p>Unfortunately, these thoughts, feelings and behaviours are extremely common in our line of work</p>
+          <p>I expect they are equally as common in plenty of other lines of work too</p>
+          <p>Especially if you’re someone who feels passionate and determined to do a great job.</p>
+          <p>Since these experiences are so common, there is a danger that we start to believe they’re an acceptable part of
+            life, or even that they are desirable.</p>
+          <p>Some amount of pressure can be useful for motivation but it’s so easy for things to spiral out of control until
+            you reach breaking point.</p>
+          <p>Nobody can argue that is a healthy place to be.</p>
+        </aside>
       </section>
 
       <section>
         <h2>What is burnout?</h2>
+        <section>
+          <aside class="notes">
+            <p>Here are a few definitions from the web...</p>
+          </aside>
+        </section>
+        <section>
+          <blockquote>
+            <p>...a state of physical and emotional exhaustion. It can occur when you experience long-term stress in your job...</p>
+            <p>...when your efforts at work have failed to produce the results that you expected, and you feel deeply disillusioned
+              as a result.</p>
+            <cite>
+              <a target="_blank" href="https://www.mindtools.com/pages/article/recovering-from-burnout.htm">mindtools.com</a>
+            </cite>
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>
+            <p>Fatigue, frustration, or apathy resulting from prolonged stress, overwork,or intense activity.</p>
+            <cite>
+              <a target="_blank" href="http://www.dictionary.com/browse/burnout?s=t">dictionary.com</a>
+            </cite>
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>
+            <p>An experience of physical, emotional, and mental exhaustion, caused by long-term involvement in situations that
+              are emotionally demanding.</p>
+            <cite>
+              <a target="_blank" href="https://patient.info/doctor/occupational-burnout">patient.info</a>
+            </cite>
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>
+            <ul>
+              <li>Emotional exhaustion, depersonalization (treating clients/students and colleagues in a cynical way), and reduced
+                feelings of work-related personal accomplishment</li>
+              <li>Emotional exhaustion, physical fatigue, and cognitive weariness</li>
+              <li>Exhaustion and disengagement</li>
+            </ul>
+            <cite>
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Occupational_burnout">wikipedia</a>
+            </cite>
+          </blockquote>
+        </section>
+        <section>
+          <blockquote>
+            <p>A state of emotional and physical exhaustion caused by a prolonged period of stress and frustration; an inevitable
+              corporate condition characterized by frequent displays of unprofessional behavior, a blithe refusal to do any
+              work, and most important, a distinct aura of not giving a shit.</p>
+            <cite>
+              <a target="_blank" href="https://www.urbandictionary.com/define.php?term=Burnout">urbandictionary.com</a>
+            </cite>
+          </blockquote>
+        </section>
+        <section>
+          <h3>Three Pillars</h3>
+          <ol>
+            <li class="fragment fade-up">Emotional exhaustion</li>
+            <li class="fragment fade-up">Detachment or depersonalisation</li>
+            <li class="fragment fade-up">Reduced performance or motivation</li>
+          </ol>
+          <div class="fragment fade-up m-top">
+            <p>Can be measured:</p>
+            <p>
+              <a target="_blank" href="https://en.wikipedia.org/wiki/Maslach_Burnout_Inventory">Malasch Burnout Inventory</a>
+            </p>
+          </div>
+          <aside class="notes">
+            <p>Although there is no officially accepted definition of the term, there are generally considered to be three aspects
+              to burnout.</p>
+          </aside>
+        </section>
       </section>
 
       <section>
-        <h2>IS stress Positive?</h2>
+        <h2>Is Stress Positive?</h2>
+        <section>
+          <aside class="notes">
+            <p>Within a professional context, I think we tend to treat some potentially stressful aspects of a job as positives.</p>
+            <p>Here are some job advert cliches...</p>
+          </aside>
+        </section>
+        <section>
+          <h3>Self-motivated</h3>
+          <blockquote class="fragment fade-up">
+            Expect to fend for yourself because we're too busy to help you.
+          </blockquote>
+        </section>
+        <section>
+          <h3>Fast paced environment</h3>
+          <blockquote class="fragment fade-up">
+            <p>High productivity at all costs.</p>
+            <p>You'll be fielding a steady flow of emergencies.</p>
+            <p>You're going to work more hours than we're paying you.</p>
+          </blockquote>
+        </section>
+        <section>
+          <h3>Seeks passionate developer</h3>
+          <blockquote class="fragment fade-up">
+            <p>You’ll put your job above all else.</p>
+          </blockquote>
+          <p class="fragment fade-up m-top visible-note">The word “passion” is a translation of the Greek word πάσχειν paschein, which means ‘to suffer’</p>
+        </section>
+        <section>
+          <h3>Thrives under pressure</h3>
+          <blockquote class="fragment fade-up">
+            Guaranteed stress on a regular basis
+          </blockquote>
+        </section>
+        <section>
+          <h3>Good sense of humour</h3>
+          <blockquote class="fragment fade-up">
+            <p>You have to laugh - otherwise you’ll cry.</p>
+            <p>There will be offensive jokes.</p>
+          </blockquote>
+        </section>
       </section>
 
       <section>
@@ -258,20 +381,16 @@
   </div>
 
   <script src="lib/js/head.min.js"></script>
-  <script src="js/reveal.js"></script>
+  <script src="js/reveal.min.js"></script>
 
   <script>
-    // More info about config & dependencies:
-    // - https://github.com/hakimel/reveal.js#configuration
-    // - https://github.com/hakimel/reveal.js#dependencies
     Reveal.initialize({
       dependencies: [
-        { src: 'plugin/markdown/marked.js' },
-        { src: 'plugin/markdown/markdown.js' },
         { src: 'plugin/notes/notes.js', async: true },
-        { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
       ],
       center: false,
+      defaultTiming: 120,
+      history: true,
     });
   </script>
 </body>
