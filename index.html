@@ -384,14 +384,33 @@
   <script src="js/reveal.min.js"></script>
 
   <script>
-    Reveal.initialize({
-      dependencies: [
-        { src: 'plugin/notes/notes.js', async: true },
-      ],
-      center: false,
-      defaultTiming: 120,
-      history: true,
-    });
+    (function () {
+      var lastSlideTimestamp = new Date().getTime();
+      var indexh = 0;
+      var indexv = 0;
+
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/notes/notes.js', async: true },
+        ],
+        center: false,
+        defaultTiming: 120,
+        history: true,
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+        var now = new Date().getTime();
+        var timeSinceLast = (now - lastSlideTimestamp) / 1000;
+        var lastSlideIndex = `${indexh}/${indexv}`;
+        
+        console.log(`${timeSinceLast} seconds on ${lastSlideIndex}`);
+
+        lastSlideTimestamp = now;
+        indexh = event.indexh;
+        indexv = event.indexv;
+      })
+    })()
+
   </script>
 </body>
 

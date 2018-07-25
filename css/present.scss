@@ -15,9 +15,11 @@
   blockquote {
     background-color: #fdf5e8;
     margin: 20px;
+    padding: 20px;
     width: 100%;
   
     cite {
+      display: block;
       font-size: 0.6em;
     }
   }

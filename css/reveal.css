@@ -18,8 +18,10 @@
 .reveal .slides section blockquote {
   background-color: #fdf5e8;
   margin: 20px;
+  padding: 20px;
   width: 100%; }
   .reveal .slides section blockquote cite {
+    display: block;
     font-size: 0.6em; }
 
 .reveal .slides section img {
