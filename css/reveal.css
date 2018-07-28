@@ -44,6 +44,15 @@
 .reveal .slides section .visible-note {
   font-style: italic; }
 
+.reveal .slides section .word-break {
+  word-break: break-all; }
+
+.reveal .slides section .text-small {
+  font-size: 0.7em; }
+
+.reveal .slides section .text-massive {
+  font-size: 15rem; }
+
 /*********************************************
  * RESET STYLES
  *********************************************/
