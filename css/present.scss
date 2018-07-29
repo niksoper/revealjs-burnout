@@ -1,4 +1,9 @@
 .reveal .slides section {
+  h2,h3,h4,h5,h6 {
+    text-transform: none;
+    letter-spacing: -0.01em;
+  }
+
   h1 {
     font-size: 2.8em;
   }
@@ -17,6 +22,14 @@
     margin: 20px;
     padding: 20px;
     width: 100%;
+
+    h1 {
+      text-transform: none;
+      font-size: 1em;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
   
     cite {
       display: block;
@@ -61,6 +74,20 @@
 
   .text-massive {
     font-size: 15rem;
+  }
+
+  .book {
+    display: flex;
+    flex-direction: row;
+
+    .book-description {
+      align-self: center;
+
+      padding: 3rem;
+      font-size: 2rem;
+      font-style: italic;
+      color: #666;
+    }
   }
 }
 

@@ -5,6 +5,10 @@
  *
  * Copyright (C) 2017 Hakim El Hattab, http://hakim.se
  */
+.reveal .slides section h2, .reveal .slides section h3, .reveal .slides section h4, .reveal .slides section h5, .reveal .slides section h6 {
+  text-transform: none;
+  letter-spacing: -0.01em; }
+
 .reveal .slides section h1 {
   font-size: 2.8em; }
 
@@ -20,6 +24,12 @@
   margin: 20px;
   padding: 20px;
   width: 100%; }
+  .reveal .slides section blockquote h1 {
+    text-transform: none;
+    font-size: 1em;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: -0.01em; }
   .reveal .slides section blockquote cite {
     display: block;
     font-size: 0.6em; }
@@ -52,6 +62,19 @@
 
 .reveal .slides section .text-massive {
   font-size: 15rem; }
+
+.reveal .slides section .book {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row; }
+  .reveal .slides section .book .book-description {
+    -ms-flex-item-align: center;
+        align-self: center;
+    padding: 3rem;
+    font-size: 2rem;
+    font-style: italic;
+    color: #666; }
 
 /*********************************************
  * RESET STYLES
