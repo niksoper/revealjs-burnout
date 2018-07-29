@@ -63,18 +63,23 @@
 .reveal .slides section .text-massive {
   font-size: 15rem; }
 
-.reveal .slides section .book {
+.reveal .slides section .columns {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row; }
-  .reveal .slides section .book .book-description {
-    -ms-flex-item-align: center;
-        align-self: center;
-    padding: 3rem;
-    font-size: 2rem;
-    font-style: italic;
-    color: #666; }
+
+.reveal .slides section .flex-one {
+  -ms-flex: 1;
+      flex: 1; }
+
+.reveal .slides section .book-description {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 3rem;
+  font-size: 2rem;
+  font-style: italic;
+  color: #666; }
 
 /*********************************************
  * RESET STYLES

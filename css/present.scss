@@ -76,18 +76,22 @@
     font-size: 15rem;
   }
 
-  .book {
+  .columns {
     display: flex;
     flex-direction: row;
+  }
 
-    .book-description {
-      align-self: center;
+  .flex-one {
+    flex: 1;
+  }
 
-      padding: 3rem;
-      font-size: 2rem;
-      font-style: italic;
-      color: #666;
-    }
+  .book-description {
+    align-self: center;
+
+    padding: 3rem;
+    font-size: 2rem;
+    font-style: italic;
+    color: #666;
   }
 }
 
