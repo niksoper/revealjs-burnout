@@ -84,6 +84,9 @@
   color: blue;
   text-decoration: underline; }
 
+.reveal .slides section em {
+  font-weight: bold; }
+
 /*********************************************
  * RESET STYLES
  *********************************************/
